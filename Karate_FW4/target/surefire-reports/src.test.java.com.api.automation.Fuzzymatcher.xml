@@ -1,0 +1,47 @@
+<testsuite failures="1" name="src/test/java/com/api/automation/Fuzzymatcher.feature" skipped="0" tests="3" time="4.318339">
+  <testcase classname="src.test.java.com.api.automation.Fuzzymatcher" name="soap 1.1" time="2.547093">
+    <system-out>Given url 'http://172.27.240.156:8003/cldwebservice/services/GetHCPCSCodes' . passed
+Given request ............................................................. passed
+When soap action 'Test1' .................................................. passed
+And print response ........................................................ passed
+And match response /Envelope/Body/getHCPCSForProgramResponse/return/errorCode == '100' . passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.com.api.automation.Fuzzymatcher" name="soap 1.1" time="0.818371">
+    <system-out>Given url 'http://172.27.240.156:8003/cldwebservice/services/GetHCPCSCodes' . passed
+Given request ............................................................. passed
+When soap action 'Test1' .................................................. passed
+And print response ........................................................ passed
+And match response /Envelope/Body/getHCPCSForProgramResponse/return/errorCode == '100' . passed
+Given url 'http://172.27.240.156:8003/cldwebservice/services/GetHCPCSCodes' . passed
+Given request ............................................................. passed
+When soap action 'Deepak' ................................................. passed
+And print response ........................................................ passed
+And match response /Envelope/Body/getHCPCSForProgramResponse/return/errorDescription == 'Success' . passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.com.api.automation.Fuzzymatcher" name="soap 1.1" time="0.952875">
+    <failure message="Fuzzymatcher.feature:46 - path: /Envelope/Body/getHCPCSForProgramResponse/return/hcpcsCodesList/hcpcsCode, actual: '[&quot;T1005&quot;,&quot;T1021&quot;,&quot;T1000&quot;,&quot;T2040&quot;,&quot;T1027&quot;,&quot;S5125&quot;,&quot;S5150&quot;,&quot;G0270&quot;]', expected: '#string? _.length&lt;=20', reason: did not evaluate to 'true'">Given url 'http://172.27.240.156:8003/cldwebservice/services/GetHCPCSCodes' . passed
+Given request ............................................................. passed
+When soap action 'Test1' .................................................. passed
+And print response ........................................................ passed
+And match response /Envelope/Body/getHCPCSForProgramResponse/return/errorCode == '100' . passed
+Given url 'http://172.27.240.156:8003/cldwebservice/services/GetHCPCSCodes' . passed
+Given request ............................................................. passed
+When soap action 'Deepak' ................................................. passed
+And print response ........................................................ passed
+And match response /Envelope/Body/getHCPCSForProgramResponse/return/errorDescription == 'Success' . passed
+Given url 'http://172.27.240.156:8003/cldwebservice/services/GetHCPCSCodes' . passed
+Given request ............................................................. passed
+When soap action 'Deepak' ................................................. passed
+And print response ........................................................ passed
+And match response /Envelope/Body/getHCPCSForProgramResponse/return/hcpcsCodesList/hcpcsCode == '#notnull' . passed
+And match response /Envelope/Body/getHCPCSForProgramResponse/return/hcpcsCodesList/hcpcsDescription == '#string' . passed
+And match response /Envelope/Body/getHCPCSForProgramResponse/return/hcpcsCodesList/procedureIID == '#string' . passed
+And match response /Envelope/Body/getHCPCSForProgramResponse/return/hcpcsCodesList/hcpcsCode == '#string? _.length&lt;=20' . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Fuzzymatcher.feature:46 - path: /Envelope/Body/getHCPCSForProgramResponse/return/hcpcsCodesList/hcpcsCode, actual: '["T1005","T1021","T1000","T2040","T1027","S5125","S5150","G0270"]', expected: '#string? _.length&lt;=20', reason: did not evaluate to 'true'&#13;
+	at ✽.And match response /Envelope/Body/getHCPCSForProgramResponse/return/hcpcsCodesList/hcpcsCode == '#string? _.length&lt;=20' (Fuzzymatcher.feature:46)&#13;
+
+And match response /Envelope/Body/getHCPCSForProgramResponse/return/hcpcsCodesList/procedureIID == '#string? _.length!=0' . skipped</failure>
+  </testcase>
+</testsuite>

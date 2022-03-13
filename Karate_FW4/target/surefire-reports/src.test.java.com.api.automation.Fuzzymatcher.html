@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.java.com.api.automation.Fuzzymatcher</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">2</div>
+            
+<div class="bg-danger" id="nav-fail">1</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2022-03-12 08:12:23 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:8]">[1:8] soap 1.1 </a>
+</div>
+<div class="nav-item passed">
+<a href="#[2:19]">[2:19] soap 1.1 </a>
+</div>
+<div class="nav-item failed">
+<a href="#[3:30]">[3:30] soap 1.1 </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/com/api/automation/Fuzzymatcher.feature</span><span class="feature-description">test soap end point with fuzzy matcher.</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:8]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:8]</span><span class="scenario-name">soap 1.1 </span>
+</div>
+<div class="scenario-time passed">ms: 2547</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:8]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container">
+<div class="step-ref bg-step"></div>
+<div class="step-cell comment"># this live url should work if you want to try this on your own</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">Given url 'http://172.27.240.156:8003/cldwebservice/services/GetHCPCSCodes'</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="preformatted" data-parent="1">20:12:18.906 karate.env system property was:</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">Given request</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="2">&lt;soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://reference.webservices.ecams.com/xsd"&gt;&lt;soap:Header&gt;&lt;uns:UserInfo xmlns:uns="http://member.webservices.ecams.com/xsd" accessId="supuser9999" accessKey="usr2" domain="UTAH" /&gt;&lt;uns:TenantCode xmlns:uns="http://member.webservices.ecams.com/xsd"&gt;UT&lt;/uns:TenantCode&gt;&lt;/soap:Header&gt;&lt;soap:Body&gt;&lt;xsd:getHCPCSForProgram&gt;&lt;!--Optional:--&gt;&lt;xsd:programName&gt;TD&lt;/xsd:programName&gt;&lt;!--Optional:--&gt;&lt;xsd:county&gt;SALT LAKE&lt;/xsd:county&gt;&lt;/xsd:getHCPCSForProgram&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">When soap action 'Test1'</div>
+</div>
+<div class="time-cell passed">2530</div>
+</div>
+<div class="preformatted" data-parent="3">20:12:20.683 request:
+1 &gt; POST http://172.27.240.156:8003/cldwebservice/services/GetHCPCSCodes
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 549
+1 &gt; Content-Type: text/xml; charset=UTF-8
+1 &gt; Host: 172.27.240.156:8003
+1 &gt; SOAPAction: Test1
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_311)
+&lt;soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://reference.webservices.ecams.com/xsd"&gt;&lt;soap:Header&gt;&lt;uns:UserInfo xmlns:uns="http://member.webservices.ecams.com/xsd" accessId="supuser9999" accessKey="usr2" domain="UTAH"/&gt;&lt;uns:TenantCode xmlns:uns="http://member.webservices.ecams.com/xsd"&gt;UT&lt;/uns:TenantCode&gt;&lt;/soap:Header&gt;&lt;soap:Body&gt;&lt;xsd:getHCPCSForProgram&gt;&lt;!--Optional:--&gt;&lt;xsd:programName&gt;TD&lt;/xsd:programName&gt;&lt;!--Optional:--&gt;&lt;xsd:county&gt;SALT LAKE&lt;/xsd:county&gt;&lt;/xsd:getHCPCSForProgram&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;
+
+20:12:21.569 response time in milliseconds: 883.30
+1 &lt; 200
+1 &lt; Content-Length: 1694
+1 &lt; Content-Type: application/soap+xml; charset=UTF-8
+1 &lt; Date: Sat, 12 Mar 2022 14:42:40 GMT
+1 &lt; Set-Cookie: JSESSIONID=GHh-lOHhpjR5yObVM6E5Ot0p-pP8D_uBJAMVORfBKP8igzDFXo9q!935305562; path=/; HttpOnly
+1 &lt; X-ORACLE-DMS-ECID: 64c04a8a-7ab2-403e-94b1-d705fc4c64eb-00001efd
+1 &lt; X-ORACLE-DMS-RID: 0
+&lt;env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope"&gt;&lt;env:Header/&gt;&lt;env:Body&gt;&lt;getHCPCSForProgramResponse xmlns:ns2="http://providersearch.memberportal.webservices.ecams.com/xsd" xmlns="http://reference.webservices.ecams.com/xsd"&gt;&lt;return&gt;&lt;errorCode&gt;100&lt;/errorCode&gt;&lt;errorDescription&gt;Success&lt;/errorDescription&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;T1005&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;Skilled Nursing Respite Care&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;844948485380&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;T1021&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;Extended Home Health Aide&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;844948504980&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;T1000&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;Extended Private Duty Nursing&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;844948484880&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;T2040&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;Financial Management Services&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;845048524880&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;T1027&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;Family Support Services&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;844948505580&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;S5125&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;Personal Attendant Services&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;835349505380&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;S5150&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;Routine Respite&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;835349534880&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;G0270&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;In-Home Feeding Therapy&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;714850554880&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;/return&gt;&lt;/getHCPCSForProgramResponse&gt;&lt;/env:Body&gt;&lt;/env:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="4">20:12:21.577 [print] &lt;env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope"&gt;&#13;
+  &lt;env:Header/&gt;&#13;
+  &lt;env:Body&gt;&#13;
+    &lt;getHCPCSForProgramResponse xmlns="http://reference.webservices.ecams.com/xsd" xmlns:ns2="http://providersearch.memberportal.webservices.ecams.com/xsd"&gt;&#13;
+      &lt;return&gt;&#13;
+        &lt;errorCode&gt;100&lt;/errorCode&gt;&#13;
+        &lt;errorDescription&gt;Success&lt;/errorDescription&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;T1005&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;Skilled Nursing Respite Care&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;844948485380&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;T1021&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;Extended Home Health Aide&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;844948504980&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;T1000&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;Extended Private Duty Nursing&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;844948484880&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;T2040&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;Financial Management Services&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;845048524880&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;T1027&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;Family Support Services&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;844948505580&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;S5125&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;Personal Attendant Services&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;835349505380&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;S5150&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;Routine Respite&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;835349534880&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;G0270&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;In-Home Feeding Therapy&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;714850554880&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+      &lt;/return&gt;&#13;
+    &lt;/getHCPCSForProgramResponse&gt;&#13;
+  &lt;/env:Body&gt;&#13;
+&lt;/env:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">And match response /Envelope/Body/getHCPCSForProgramResponse/return/errorCode == '100'</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2:19]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [2:19]</span><span class="scenario-name">soap 1.1 </span>
+</div>
+<div class="scenario-time passed">ms: 818</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2:19]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2:19]bg">
+<div class="step-container">
+<div class="step-ref bg-step"></div>
+<div class="step-cell comment"># this live url should work if you want to try this on your own</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row" data-parent="[2:19]bg">
+<div class="step-container" id="6">
+<div class="step-ref bg-step">6</div>
+<div class="step-cell passed">Given url 'http://172.27.240.156:8003/cldwebservice/services/GetHCPCSCodes'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="6">20:12:21.598 karate.env system property was:</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">Given request</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="7">&lt;soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://reference.webservices.ecams.com/xsd"&gt;&lt;soap:Header&gt;&lt;uns:UserInfo xmlns:uns="http://member.webservices.ecams.com/xsd" accessId="supuser9999" accessKey="usr2" domain="UTAH" /&gt;&lt;uns:TenantCode xmlns:uns="http://member.webservices.ecams.com/xsd"&gt;UT&lt;/uns:TenantCode&gt;&lt;/soap:Header&gt;&lt;soap:Body&gt;&lt;xsd:getHCPCSForProgram&gt;&lt;!--Optional:--&gt;&lt;xsd:programName&gt;TD&lt;/xsd:programName&gt;&lt;!--Optional:--&gt;&lt;xsd:county&gt;SALT LAKE&lt;/xsd:county&gt;&lt;/xsd:getHCPCSForProgram&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">When soap action 'Deepak'</div>
+</div>
+<div class="time-cell passed">801</div>
+</div>
+<div class="preformatted" data-parent="8">20:12:21.608 request:
+1 &gt; POST http://172.27.240.156:8003/cldwebservice/services/GetHCPCSCodes
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 549
+1 &gt; Content-Type: text/xml; charset=UTF-8
+1 &gt; Host: 172.27.240.156:8003
+1 &gt; SOAPAction: Deepak
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_311)
+&lt;soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://reference.webservices.ecams.com/xsd"&gt;&lt;soap:Header&gt;&lt;uns:UserInfo xmlns:uns="http://member.webservices.ecams.com/xsd" accessId="supuser9999" accessKey="usr2" domain="UTAH"/&gt;&lt;uns:TenantCode xmlns:uns="http://member.webservices.ecams.com/xsd"&gt;UT&lt;/uns:TenantCode&gt;&lt;/soap:Header&gt;&lt;soap:Body&gt;&lt;xsd:getHCPCSForProgram&gt;&lt;!--Optional:--&gt;&lt;xsd:programName&gt;TD&lt;/xsd:programName&gt;&lt;!--Optional:--&gt;&lt;xsd:county&gt;SALT LAKE&lt;/xsd:county&gt;&lt;/xsd:getHCPCSForProgram&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;
+
+20:12:22.396 response time in milliseconds: 787.88
+1 &lt; 200
+1 &lt; Content-Length: 1694
+1 &lt; Content-Type: application/soap+xml; charset=UTF-8
+1 &lt; Date: Sat, 12 Mar 2022 14:42:40 GMT
+1 &lt; Set-Cookie: JSESSIONID=wqR-lOVHOjIiMXchLamOptEvNawtd4Iod-HMjqKY-ymXwo06VjZZ!935305562; path=/; HttpOnly
+1 &lt; X-ORACLE-DMS-ECID: 64c04a8a-7ab2-403e-94b1-d705fc4c64eb-00001efe
+1 &lt; X-ORACLE-DMS-RID: 0
+&lt;env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope"&gt;&lt;env:Header/&gt;&lt;env:Body&gt;&lt;getHCPCSForProgramResponse xmlns:ns2="http://providersearch.memberportal.webservices.ecams.com/xsd" xmlns="http://reference.webservices.ecams.com/xsd"&gt;&lt;return&gt;&lt;errorCode&gt;100&lt;/errorCode&gt;&lt;errorDescription&gt;Success&lt;/errorDescription&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;T1005&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;Skilled Nursing Respite Care&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;844948485380&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;T1021&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;Extended Home Health Aide&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;844948504980&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;T1000&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;Extended Private Duty Nursing&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;844948484880&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;T2040&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;Financial Management Services&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;845048524880&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;T1027&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;Family Support Services&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;844948505580&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;S5125&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;Personal Attendant Services&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;835349505380&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;S5150&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;Routine Respite&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;835349534880&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;G0270&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;In-Home Feeding Therapy&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;714850554880&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;/return&gt;&lt;/getHCPCSForProgramResponse&gt;&lt;/env:Body&gt;&lt;/env:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="preformatted" data-parent="9">20:12:22.408 [print] &lt;env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope"&gt;&#13;
+  &lt;env:Header/&gt;&#13;
+  &lt;env:Body&gt;&#13;
+    &lt;getHCPCSForProgramResponse xmlns="http://reference.webservices.ecams.com/xsd" xmlns:ns2="http://providersearch.memberportal.webservices.ecams.com/xsd"&gt;&#13;
+      &lt;return&gt;&#13;
+        &lt;errorCode&gt;100&lt;/errorCode&gt;&#13;
+        &lt;errorDescription&gt;Success&lt;/errorDescription&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;T1005&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;Skilled Nursing Respite Care&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;844948485380&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;T1021&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;Extended Home Health Aide&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;844948504980&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;T1000&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;Extended Private Duty Nursing&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;844948484880&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;T2040&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;Financial Management Services&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;845048524880&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;T1027&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;Family Support Services&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;844948505580&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;S5125&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;Personal Attendant Services&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;835349505380&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;S5150&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;Routine Respite&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;835349534880&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;G0270&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;In-Home Feeding Therapy&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;714850554880&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+      &lt;/return&gt;&#13;
+    &lt;/getHCPCSForProgramResponse&gt;&#13;
+  &lt;/env:Body&gt;&#13;
+&lt;/env:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">And match response /Envelope/Body/getHCPCSForProgramResponse/return/errorDescription == 'Success'</div>
+</div>
+<div class="time-cell passed">9</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[3:30]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [3:30]</span><span class="scenario-name">soap 1.1 </span>
+</div>
+<div class="scenario-time failed">ms: 953</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[3:30]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[3:30]bg">
+<div class="step-container">
+<div class="step-ref bg-step"></div>
+<div class="step-cell comment"># this live url should work if you want to try this on your own</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row" data-parent="[3:30]bg">
+<div class="step-container" id="11">
+<div class="step-ref bg-step">11</div>
+<div class="step-cell passed">Given url 'http://172.27.240.156:8003/cldwebservice/services/GetHCPCSCodes'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="11">20:12:22.433 karate.env system property was:</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">Given request</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="12">&lt;soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://reference.webservices.ecams.com/xsd"&gt;&lt;soap:Header&gt;&lt;uns:UserInfo xmlns:uns="http://member.webservices.ecams.com/xsd" accessId="supuser9999" accessKey="usr2" domain="UTAH" /&gt;&lt;uns:TenantCode xmlns:uns="http://member.webservices.ecams.com/xsd"&gt;UT&lt;/uns:TenantCode&gt;&lt;/soap:Header&gt;&lt;soap:Body&gt;&lt;xsd:getHCPCSForProgram&gt;&lt;!--Optional:--&gt;&lt;xsd:programName&gt;TD&lt;/xsd:programName&gt;&lt;!--Optional:--&gt;&lt;xsd:county&gt;SALT LAKE&lt;/xsd:county&gt;&lt;/xsd:getHCPCSForProgram&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-cell comment"># Fuzzy match to check the data type of response and to check null/Not null</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">When soap action 'Deepak'</div>
+</div>
+<div class="time-cell passed">908</div>
+</div>
+<div class="preformatted" data-parent="13">20:12:22.440 request:
+1 &gt; POST http://172.27.240.156:8003/cldwebservice/services/GetHCPCSCodes
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 549
+1 &gt; Content-Type: text/xml; charset=UTF-8
+1 &gt; Host: 172.27.240.156:8003
+1 &gt; SOAPAction: Deepak
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_311)
+&lt;soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://reference.webservices.ecams.com/xsd"&gt;&lt;soap:Header&gt;&lt;uns:UserInfo xmlns:uns="http://member.webservices.ecams.com/xsd" accessId="supuser9999" accessKey="usr2" domain="UTAH"/&gt;&lt;uns:TenantCode xmlns:uns="http://member.webservices.ecams.com/xsd"&gt;UT&lt;/uns:TenantCode&gt;&lt;/soap:Header&gt;&lt;soap:Body&gt;&lt;xsd:getHCPCSForProgram&gt;&lt;!--Optional:--&gt;&lt;xsd:programName&gt;TD&lt;/xsd:programName&gt;&lt;!--Optional:--&gt;&lt;xsd:county&gt;SALT LAKE&lt;/xsd:county&gt;&lt;/xsd:getHCPCSForProgram&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;
+
+20:12:23.340 response time in milliseconds: 897.59
+1 &lt; 200
+1 &lt; Content-Length: 1694
+1 &lt; Content-Type: application/soap+xml; charset=UTF-8
+1 &lt; Date: Sat, 12 Mar 2022 14:42:41 GMT
+1 &lt; Set-Cookie: JSESSIONID=p3B-lOi_9Ia48NVRcbU359a1wwr-zx6sFihLpbDCNcw9FEfrYS6a!935305562; path=/; HttpOnly
+1 &lt; X-ORACLE-DMS-ECID: 64c04a8a-7ab2-403e-94b1-d705fc4c64eb-00001f00
+1 &lt; X-ORACLE-DMS-RID: 0
+&lt;env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope"&gt;&lt;env:Header/&gt;&lt;env:Body&gt;&lt;getHCPCSForProgramResponse xmlns:ns2="http://providersearch.memberportal.webservices.ecams.com/xsd" xmlns="http://reference.webservices.ecams.com/xsd"&gt;&lt;return&gt;&lt;errorCode&gt;100&lt;/errorCode&gt;&lt;errorDescription&gt;Success&lt;/errorDescription&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;T1005&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;Skilled Nursing Respite Care&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;844948485380&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;T1021&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;Extended Home Health Aide&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;844948504980&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;T1000&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;Extended Private Duty Nursing&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;844948484880&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;T2040&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;Financial Management Services&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;845048524880&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;T1027&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;Family Support Services&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;844948505580&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;S5125&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;Personal Attendant Services&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;835349505380&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;S5150&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;Routine Respite&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;835349534880&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;hcpcsCodesList&gt;&lt;hcpcsCode&gt;G0270&lt;/hcpcsCode&gt;&lt;hcpcsDescription&gt;In-Home Feeding Therapy&lt;/hcpcsDescription&gt;&lt;procedureIID&gt;714850554880&lt;/procedureIID&gt;&lt;/hcpcsCodesList&gt;&lt;/return&gt;&lt;/getHCPCSForProgramResponse&gt;&lt;/env:Body&gt;&lt;/env:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="preformatted" data-parent="14">20:12:23.349 [print] &lt;env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope"&gt;&#13;
+  &lt;env:Header/&gt;&#13;
+  &lt;env:Body&gt;&#13;
+    &lt;getHCPCSForProgramResponse xmlns="http://reference.webservices.ecams.com/xsd" xmlns:ns2="http://providersearch.memberportal.webservices.ecams.com/xsd"&gt;&#13;
+      &lt;return&gt;&#13;
+        &lt;errorCode&gt;100&lt;/errorCode&gt;&#13;
+        &lt;errorDescription&gt;Success&lt;/errorDescription&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;T1005&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;Skilled Nursing Respite Care&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;844948485380&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;T1021&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;Extended Home Health Aide&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;844948504980&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;T1000&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;Extended Private Duty Nursing&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;844948484880&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;T2040&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;Financial Management Services&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;845048524880&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;T1027&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;Family Support Services&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;844948505580&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;S5125&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;Personal Attendant Services&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;835349505380&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;S5150&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;Routine Respite&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;835349534880&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+        &lt;hcpcsCodesList&gt;&#13;
+          &lt;hcpcsCode&gt;G0270&lt;/hcpcsCode&gt;&#13;
+          &lt;hcpcsDescription&gt;In-Home Feeding Therapy&lt;/hcpcsDescription&gt;&#13;
+          &lt;procedureIID&gt;714850554880&lt;/procedureIID&gt;&#13;
+        &lt;/hcpcsCodesList&gt;&#13;
+      &lt;/return&gt;&#13;
+    &lt;/getHCPCSForProgramResponse&gt;&#13;
+  &lt;/env:Body&gt;&#13;
+&lt;/env:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">And match response /Envelope/Body/getHCPCSForProgramResponse/return/hcpcsCodesList/hcpcsCode == '#notnull'</div>
+</div>
+<div class="time-cell passed">11</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">And match response /Envelope/Body/getHCPCSForProgramResponse/return/hcpcsCodesList/hcpcsDescription == '#string'</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">And match response /Envelope/Body/getHCPCSForProgramResponse/return/hcpcsCodesList/procedureIID == '#string'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref failed"></div>
+<div class="step-cell comment"># Fuzzy match to check the data length using java script methods</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref failed">18</div>
+<div class="step-cell failed">And match response /Envelope/Body/getHCPCSForProgramResponse/return/hcpcsCodesList/hcpcsCode == '#string? _.length&lt;=20'</div>
+</div>
+<div class="time-cell failed">21</div>
+</div>
+<div class="preformatted" data-parent="18">20:12:23.390 assertion failed: path: /Envelope/Body/getHCPCSForProgramResponse/return/hcpcsCodesList/hcpcsCode, actual: '["T1005","T1021","T1000","T2040","T1027","S5125","S5150","G0270"]', expected: '#string? _.length&lt;=20', reason: did not evaluate to 'true'
+Fuzzymatcher.feature:46 - path: /Envelope/Body/getHCPCSForProgramResponse/return/hcpcsCodesList/hcpcsCode, actual: '["T1005","T1021","T1000","T2040","T1027","S5125","S5150","G0270"]', expected: '#string? _.length&lt;=20', reason: did not evaluate to 'true'</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref skipped">19</div>
+<div class="step-cell skipped">And match response /Envelope/Body/getHCPCSForProgramResponse/return/hcpcsCodesList/procedureIID == '#string? _.length!=0'</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+20:12:18.906 karate.env system property was:  
+20:12:20.683 request:
+1 > POST http://172.27.240.156:8003/cldwebservice/services/GetHCPCSCodes
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 549
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Host: 172.27.240.156:8003
+1 > SOAPAction: Test1
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_311)
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://reference.webservices.ecams.com/xsd"><soap:Header><uns:UserInfo xmlns:uns="http://member.webservices.ecams.com/xsd" accessId="supuser9999" accessKey="usr2" domain="UTAH"/><uns:TenantCode xmlns:uns="http://member.webservices.ecams.com/xsd">UT</uns:TenantCode></soap:Header><soap:Body><xsd:getHCPCSForProgram><!--Optional:--><xsd:programName>TD</xsd:programName><!--Optional:--><xsd:county>SALT LAKE</xsd:county></xsd:getHCPCSForProgram></soap:Body></soap:Envelope>
+
+20:12:21.569 response time in milliseconds: 883.30
+1 < 200
+1 < Content-Length: 1694
+1 < Content-Type: application/soap+xml; charset=UTF-8
+1 < Date: Sat, 12 Mar 2022 14:42:40 GMT
+1 < Set-Cookie: JSESSIONID=GHh-lOHhpjR5yObVM6E5Ot0p-pP8D_uBJAMVORfBKP8igzDFXo9q!935305562; path=/; HttpOnly
+1 < X-ORACLE-DMS-ECID: 64c04a8a-7ab2-403e-94b1-d705fc4c64eb-00001efd
+1 < X-ORACLE-DMS-RID: 0
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope"><env:Header/><env:Body><getHCPCSForProgramResponse xmlns:ns2="http://providersearch.memberportal.webservices.ecams.com/xsd" xmlns="http://reference.webservices.ecams.com/xsd"><return><errorCode>100</errorCode><errorDescription>Success</errorDescription><hcpcsCodesList><hcpcsCode>T1005</hcpcsCode><hcpcsDescription>Skilled Nursing Respite Care</hcpcsDescription><procedureIID>844948485380</procedureIID></hcpcsCodesList><hcpcsCodesList><hcpcsCode>T1021</hcpcsCode><hcpcsDescription>Extended Home Health Aide</hcpcsDescription><procedureIID>844948504980</procedureIID></hcpcsCodesList><hcpcsCodesList><hcpcsCode>T1000</hcpcsCode><hcpcsDescription>Extended Private Duty Nursing</hcpcsDescription><procedureIID>844948484880</procedureIID></hcpcsCodesList><hcpcsCodesList><hcpcsCode>T2040</hcpcsCode><hcpcsDescription>Financial Management Services</hcpcsDescription><procedureIID>845048524880</procedureIID></hcpcsCodesList><hcpcsCodesList><hcpcsCode>T1027</hcpcsCode><hcpcsDescription>Family Support Services</hcpcsDescription><procedureIID>844948505580</procedureIID></hcpcsCodesList><hcpcsCodesList><hcpcsCode>S5125</hcpcsCode><hcpcsDescription>Personal Attendant Services</hcpcsDescription><procedureIID>835349505380</procedureIID></hcpcsCodesList><hcpcsCodesList><hcpcsCode>S5150</hcpcsCode><hcpcsDescription>Routine Respite</hcpcsDescription><procedureIID>835349534880</procedureIID></hcpcsCodesList><hcpcsCodesList><hcpcsCode>G0270</hcpcsCode><hcpcsDescription>In-Home Feeding Therapy</hcpcsDescription><procedureIID>714850554880</procedureIID></hcpcsCodesList></return></getHCPCSForProgramResponse></env:Body></env:Envelope>
+
+20:12:21.577 [print] <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+  <env:Header/>
+  <env:Body>
+    <getHCPCSForProgramResponse xmlns="http://reference.webservices.ecams.com/xsd" xmlns:ns2="http://providersearch.memberportal.webservices.ecams.com/xsd">
+      <return>
+        <errorCode>100</errorCode>
+        <errorDescription>Success</errorDescription>
+        <hcpcsCodesList>
+          <hcpcsCode>T1005</hcpcsCode>
+          <hcpcsDescription>Skilled Nursing Respite Care</hcpcsDescription>
+          <procedureIID>844948485380</procedureIID>
+        </hcpcsCodesList>
+        <hcpcsCodesList>
+          <hcpcsCode>T1021</hcpcsCode>
+          <hcpcsDescription>Extended Home Health Aide</hcpcsDescription>
+          <procedureIID>844948504980</procedureIID>
+        </hcpcsCodesList>
+        <hcpcsCodesList>
+          <hcpcsCode>T1000</hcpcsCode>
+          <hcpcsDescription>Extended Private Duty Nursing</hcpcsDescription>
+          <procedureIID>844948484880</procedureIID>
+        </hcpcsCodesList>
+        <hcpcsCodesList>
+          <hcpcsCode>T2040</hcpcsCode>
+          <hcpcsDescription>Financial Management Services</hcpcsDescription>
+          <procedureIID>845048524880</procedureIID>
+        </hcpcsCodesList>
+        <hcpcsCodesList>
+          <hcpcsCode>T1027</hcpcsCode>
+          <hcpcsDescription>Family Support Services</hcpcsDescription>
+          <procedureIID>844948505580</procedureIID>
+        </hcpcsCodesList>
+        <hcpcsCodesList>
+          <hcpcsCode>S5125</hcpcsCode>
+          <hcpcsDescription>Personal Attendant Services</hcpcsDescription>
+          <procedureIID>835349505380</procedureIID>
+        </hcpcsCodesList>
+        <hcpcsCodesList>
+          <hcpcsCode>S5150</hcpcsCode>
+          <hcpcsDescription>Routine Respite</hcpcsDescription>
+          <procedureIID>835349534880</procedureIID>
+        </hcpcsCodesList>
+        <hcpcsCodesList>
+          <hcpcsCode>G0270</hcpcsCode>
+          <hcpcsDescription>In-Home Feeding Therapy</hcpcsDescription>
+          <procedureIID>714850554880</procedureIID>
+        </hcpcsCodesList>
+      </return>
+    </getHCPCSForProgramResponse>
+  </env:Body>
+</env:Envelope>
+
+20:12:21.598 karate.env system property was:  
+20:12:21.608 request:
+1 > POST http://172.27.240.156:8003/cldwebservice/services/GetHCPCSCodes
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 549
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Host: 172.27.240.156:8003
+1 > SOAPAction: Deepak
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_311)
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://reference.webservices.ecams.com/xsd"><soap:Header><uns:UserInfo xmlns:uns="http://member.webservices.ecams.com/xsd" accessId="supuser9999" accessKey="usr2" domain="UTAH"/><uns:TenantCode xmlns:uns="http://member.webservices.ecams.com/xsd">UT</uns:TenantCode></soap:Header><soap:Body><xsd:getHCPCSForProgram><!--Optional:--><xsd:programName>TD</xsd:programName><!--Optional:--><xsd:county>SALT LAKE</xsd:county></xsd:getHCPCSForProgram></soap:Body></soap:Envelope>
+
+20:12:22.396 response time in milliseconds: 787.88
+1 < 200
+1 < Content-Length: 1694
+1 < Content-Type: application/soap+xml; charset=UTF-8
+1 < Date: Sat, 12 Mar 2022 14:42:40 GMT
+1 < Set-Cookie: JSESSIONID=wqR-lOVHOjIiMXchLamOptEvNawtd4Iod-HMjqKY-ymXwo06VjZZ!935305562; path=/; HttpOnly
+1 < X-ORACLE-DMS-ECID: 64c04a8a-7ab2-403e-94b1-d705fc4c64eb-00001efe
+1 < X-ORACLE-DMS-RID: 0
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope"><env:Header/><env:Body><getHCPCSForProgramResponse xmlns:ns2="http://providersearch.memberportal.webservices.ecams.com/xsd" xmlns="http://reference.webservices.ecams.com/xsd"><return><errorCode>100</errorCode><errorDescription>Success</errorDescription><hcpcsCodesList><hcpcsCode>T1005</hcpcsCode><hcpcsDescription>Skilled Nursing Respite Care</hcpcsDescription><procedureIID>844948485380</procedureIID></hcpcsCodesList><hcpcsCodesList><hcpcsCode>T1021</hcpcsCode><hcpcsDescription>Extended Home Health Aide</hcpcsDescription><procedureIID>844948504980</procedureIID></hcpcsCodesList><hcpcsCodesList><hcpcsCode>T1000</hcpcsCode><hcpcsDescription>Extended Private Duty Nursing</hcpcsDescription><procedureIID>844948484880</procedureIID></hcpcsCodesList><hcpcsCodesList><hcpcsCode>T2040</hcpcsCode><hcpcsDescription>Financial Management Services</hcpcsDescription><procedureIID>845048524880</procedureIID></hcpcsCodesList><hcpcsCodesList><hcpcsCode>T1027</hcpcsCode><hcpcsDescription>Family Support Services</hcpcsDescription><procedureIID>844948505580</procedureIID></hcpcsCodesList><hcpcsCodesList><hcpcsCode>S5125</hcpcsCode><hcpcsDescription>Personal Attendant Services</hcpcsDescription><procedureIID>835349505380</procedureIID></hcpcsCodesList><hcpcsCodesList><hcpcsCode>S5150</hcpcsCode><hcpcsDescription>Routine Respite</hcpcsDescription><procedureIID>835349534880</procedureIID></hcpcsCodesList><hcpcsCodesList><hcpcsCode>G0270</hcpcsCode><hcpcsDescription>In-Home Feeding Therapy</hcpcsDescription><procedureIID>714850554880</procedureIID></hcpcsCodesList></return></getHCPCSForProgramResponse></env:Body></env:Envelope>
+
+20:12:22.408 [print] <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+  <env:Header/>
+  <env:Body>
+    <getHCPCSForProgramResponse xmlns="http://reference.webservices.ecams.com/xsd" xmlns:ns2="http://providersearch.memberportal.webservices.ecams.com/xsd">
+      <return>
+        <errorCode>100</errorCode>
+        <errorDescription>Success</errorDescription>
+        <hcpcsCodesList>
+          <hcpcsCode>T1005</hcpcsCode>
+          <hcpcsDescription>Skilled Nursing Respite Care</hcpcsDescription>
+          <procedureIID>844948485380</procedureIID>
+        </hcpcsCodesList>
+        <hcpcsCodesList>
+          <hcpcsCode>T1021</hcpcsCode>
+          <hcpcsDescription>Extended Home Health Aide</hcpcsDescription>
+          <procedureIID>844948504980</procedureIID>
+        </hcpcsCodesList>
+        <hcpcsCodesList>
+          <hcpcsCode>T1000</hcpcsCode>
+          <hcpcsDescription>Extended Private Duty Nursing</hcpcsDescription>
+          <procedureIID>844948484880</procedureIID>
+        </hcpcsCodesList>
+        <hcpcsCodesList>
+          <hcpcsCode>T2040</hcpcsCode>
+          <hcpcsDescription>Financial Management Services</hcpcsDescription>
+          <procedureIID>845048524880</procedureIID>
+        </hcpcsCodesList>
+        <hcpcsCodesList>
+          <hcpcsCode>T1027</hcpcsCode>
+          <hcpcsDescription>Family Support Services</hcpcsDescription>
+          <procedureIID>844948505580</procedureIID>
+        </hcpcsCodesList>
+        <hcpcsCodesList>
+          <hcpcsCode>S5125</hcpcsCode>
+          <hcpcsDescription>Personal Attendant Services</hcpcsDescription>
+          <procedureIID>835349505380</procedureIID>
+        </hcpcsCodesList>
+        <hcpcsCodesList>
+          <hcpcsCode>S5150</hcpcsCode>
+          <hcpcsDescription>Routine Respite</hcpcsDescription>
+          <procedureIID>835349534880</procedureIID>
+        </hcpcsCodesList>
+        <hcpcsCodesList>
+          <hcpcsCode>G0270</hcpcsCode>
+          <hcpcsDescription>In-Home Feeding Therapy</hcpcsDescription>
+          <procedureIID>714850554880</procedureIID>
+        </hcpcsCodesList>
+      </return>
+    </getHCPCSForProgramResponse>
+  </env:Body>
+</env:Envelope>
+
+20:12:22.433 karate.env system property was:  
+20:12:22.440 request:
+1 > POST http://172.27.240.156:8003/cldwebservice/services/GetHCPCSCodes
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 549
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Host: 172.27.240.156:8003
+1 > SOAPAction: Deepak
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_311)
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://reference.webservices.ecams.com/xsd"><soap:Header><uns:UserInfo xmlns:uns="http://member.webservices.ecams.com/xsd" accessId="supuser9999" accessKey="usr2" domain="UTAH"/><uns:TenantCode xmlns:uns="http://member.webservices.ecams.com/xsd">UT</uns:TenantCode></soap:Header><soap:Body><xsd:getHCPCSForProgram><!--Optional:--><xsd:programName>TD</xsd:programName><!--Optional:--><xsd:county>SALT LAKE</xsd:county></xsd:getHCPCSForProgram></soap:Body></soap:Envelope>
+
+20:12:23.340 response time in milliseconds: 897.59
+1 < 200
+1 < Content-Length: 1694
+1 < Content-Type: application/soap+xml; charset=UTF-8
+1 < Date: Sat, 12 Mar 2022 14:42:41 GMT
+1 < Set-Cookie: JSESSIONID=p3B-lOi_9Ia48NVRcbU359a1wwr-zx6sFihLpbDCNcw9FEfrYS6a!935305562; path=/; HttpOnly
+1 < X-ORACLE-DMS-ECID: 64c04a8a-7ab2-403e-94b1-d705fc4c64eb-00001f00
+1 < X-ORACLE-DMS-RID: 0
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope"><env:Header/><env:Body><getHCPCSForProgramResponse xmlns:ns2="http://providersearch.memberportal.webservices.ecams.com/xsd" xmlns="http://reference.webservices.ecams.com/xsd"><return><errorCode>100</errorCode><errorDescription>Success</errorDescription><hcpcsCodesList><hcpcsCode>T1005</hcpcsCode><hcpcsDescription>Skilled Nursing Respite Care</hcpcsDescription><procedureIID>844948485380</procedureIID></hcpcsCodesList><hcpcsCodesList><hcpcsCode>T1021</hcpcsCode><hcpcsDescription>Extended Home Health Aide</hcpcsDescription><procedureIID>844948504980</procedureIID></hcpcsCodesList><hcpcsCodesList><hcpcsCode>T1000</hcpcsCode><hcpcsDescription>Extended Private Duty Nursing</hcpcsDescription><procedureIID>844948484880</procedureIID></hcpcsCodesList><hcpcsCodesList><hcpcsCode>T2040</hcpcsCode><hcpcsDescription>Financial Management Services</hcpcsDescription><procedureIID>845048524880</procedureIID></hcpcsCodesList><hcpcsCodesList><hcpcsCode>T1027</hcpcsCode><hcpcsDescription>Family Support Services</hcpcsDescription><procedureIID>844948505580</procedureIID></hcpcsCodesList><hcpcsCodesList><hcpcsCode>S5125</hcpcsCode><hcpcsDescription>Personal Attendant Services</hcpcsDescription><procedureIID>835349505380</procedureIID></hcpcsCodesList><hcpcsCodesList><hcpcsCode>S5150</hcpcsCode><hcpcsDescription>Routine Respite</hcpcsDescription><procedureIID>835349534880</procedureIID></hcpcsCodesList><hcpcsCodesList><hcpcsCode>G0270</hcpcsCode><hcpcsDescription>In-Home Feeding Therapy</hcpcsDescription><procedureIID>714850554880</procedureIID></hcpcsCodesList></return></getHCPCSForProgramResponse></env:Body></env:Envelope>
+
+20:12:23.349 [print] <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+  <env:Header/>
+  <env:Body>
+    <getHCPCSForProgramResponse xmlns="http://reference.webservices.ecams.com/xsd" xmlns:ns2="http://providersearch.memberportal.webservices.ecams.com/xsd">
+      <return>
+        <errorCode>100</errorCode>
+        <errorDescription>Success</errorDescription>
+        <hcpcsCodesList>
+          <hcpcsCode>T1005</hcpcsCode>
+          <hcpcsDescription>Skilled Nursing Respite Care</hcpcsDescription>
+          <procedureIID>844948485380</procedureIID>
+        </hcpcsCodesList>
+        <hcpcsCodesList>
+          <hcpcsCode>T1021</hcpcsCode>
+          <hcpcsDescription>Extended Home Health Aide</hcpcsDescription>
+          <procedureIID>844948504980</procedureIID>
+        </hcpcsCodesList>
+        <hcpcsCodesList>
+          <hcpcsCode>T1000</hcpcsCode>
+          <hcpcsDescription>Extended Private Duty Nursing</hcpcsDescription>
+          <procedureIID>844948484880</procedureIID>
+        </hcpcsCodesList>
+        <hcpcsCodesList>
+          <hcpcsCode>T2040</hcpcsCode>
+          <hcpcsDescription>Financial Management Services</hcpcsDescription>
+          <procedureIID>845048524880</procedureIID>
+        </hcpcsCodesList>
+        <hcpcsCodesList>
+          <hcpcsCode>T1027</hcpcsCode>
+          <hcpcsDescription>Family Support Services</hcpcsDescription>
+          <procedureIID>844948505580</procedureIID>
+        </hcpcsCodesList>
+        <hcpcsCodesList>
+          <hcpcsCode>S5125</hcpcsCode>
+          <hcpcsDescription>Personal Attendant Services</hcpcsDescription>
+          <procedureIID>835349505380</procedureIID>
+        </hcpcsCodesList>
+        <hcpcsCodesList>
+          <hcpcsCode>S5150</hcpcsCode>
+          <hcpcsDescription>Routine Respite</hcpcsDescription>
+          <procedureIID>835349534880</procedureIID>
+        </hcpcsCodesList>
+        <hcpcsCodesList>
+          <hcpcsCode>G0270</hcpcsCode>
+          <hcpcsDescription>In-Home Feeding Therapy</hcpcsDescription>
+          <procedureIID>714850554880</procedureIID>
+        </hcpcsCodesList>
+      </return>
+    </getHCPCSForProgramResponse>
+  </env:Body>
+</env:Envelope>
+
+20:12:23.390 assertion failed: path: /Envelope/Body/getHCPCSForProgramResponse/return/hcpcsCodesList/hcpcsCode, actual: '["T1005","T1021","T1000","T2040","T1027","S5125","S5150","G0270"]', expected: '#string? _.length<=20', reason: did not evaluate to 'true'

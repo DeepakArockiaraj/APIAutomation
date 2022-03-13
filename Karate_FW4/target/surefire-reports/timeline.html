@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-1"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"Fuzzymatcher[1:8]","start":1307,"end":3879,"title":"Fuzzymatcher[1:8] 05:30:01.307-05:30:03.879 soap 1.1"},{"id":2,"group":1,"content":"Fuzzymatcher[2:19]","start":3891,"end":4712,"title":"Fuzzymatcher[2:19] 05:30:03.891-05:30:04.712 soap 1.1"},{"id":3,"group":1,"content":"Fuzzymatcher[3:30]","start":4727,"end":5684,"title":"Fuzzymatcher[3:30] 05:30:04.727-05:30:05.684 soap 1.1"}]);
+var container = document.getElementById('visualization');
+var timeline = new vis.Timeline(container);
+timeline.setOptions({ groupOrder: 'content' });
+timeline.setGroups(groups);
+timeline.setItems(items);
+</script>
+  </body>
+</html>
